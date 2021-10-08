@@ -1,0 +1,10 @@
+<h1>This is Index Page!</h1>
+<LinkTo @route="service-index"><h1>Service-Todo</h1></LinkTo>
+<LinkTo @route="todos"><h1>Ember-Data-Todo</h1></LinkTo>
+<form {{on 'submit' handleSubmit}}>
+  <input type="text" value={{todo}} {{on 'change' update}}>
+  <button type="submit">Add</button>
+</form>
+{{#each todos as |todo|}}
+<h1 {{on 'click' (fn deleteTodo todo)}}>{{todo}}</h1>
+{{/each}}

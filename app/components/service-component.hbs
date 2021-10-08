@@ -1,0 +1,9 @@
+<h1>This is Service-Todo-Component!</h1>
+<LinkTo @route="/"><h1>Index Page!</h1></LinkTo>
+<form {{on 'submit' handleAction}}>
+  <input type="text" value={{todo}} {{on 'change' update}}/>
+  <button type="submit">Add</button>
+</form>
+{{#each todoService.todos as |todo|}}
+<h1 {{on 'click' (fn deleteAction todo)}}>{{todo}}</h1>
+{{/each}}

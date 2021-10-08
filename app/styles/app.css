@@ -1,0 +1,23 @@
+*{
+  text-align: center;
+}
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 3rem;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 3rem;
+  position: relative;
+  top: 50vh;
+  width: 100%;
+}
